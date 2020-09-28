@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement />
+  <nodes>
+    <node x="0.0" y="86.0">be.pxl.ja.streamingservice.model.Playable</node>
+    <node x="902.25" y="0.0">be.pxl.ja.streamingservice.model.StreamingPlan</node>
+    <node x="14.249999999999972" y="319.0">be.pxl.ja.streamingservice.model.Movie</node>
+    <node x="477.25" y="0.0">be.pxl.ja.streamingservice.model.Genre</node>
+    <node x="696.25" y="0.0">be.pxl.ja.streamingservice.model.Rating</node>
+    <node x="198.24999999999997" y="0.0">be.pxl.ja.streamingservice.model.Content</node>
+    <node x="19.249999999999943" y="858.0">be.pxl.ja.streamingservice.model.Documentary</node>
+    <node x="243.24999999999997" y="495.0">be.pxl.ja.streamingservice.model.TVShow</node>
+    <node x="1160.25" y="0.0">be.pxl.ja.streamingservice.model.PaymentInfo</node>
+    <node x="0.0" y="1106.0">be.pxl.ja.streamingservice.model.CreditCardType</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="be.pxl.ja.streamingservice.model.TVShow" target="be.pxl.ja.streamingservice.model.Content">
+      <point x="0.0" y="-68.5" />
+      <point x="46.5" y="134.5" />
+    </edge>
+    <edge source="be.pxl.ja.streamingservice.model.Documentary" target="be.pxl.ja.streamingservice.model.Movie">
+      <point x="2.8421709430404007E-14" y="-101.5" />
+      <point x="0.0" y="244.5" />
+    </edge>
+    <edge source="be.pxl.ja.streamingservice.model.Movie" target="be.pxl.ja.streamingservice.model.Playable">
+      <point x="-52.24999999999997" y="-244.5" />
+      <point x="0.0" y="48.5" />
+    </edge>
+    <edge source="be.pxl.ja.streamingservice.model.Movie" target="be.pxl.ja.streamingservice.model.Content">
+      <point x="52.25000000000003" y="-244.5" />
+      <point x="171.0" y="294.0" />
+      <point x="244.74999999999997" y="294.0" />
+      <point x="-46.5" y="134.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="525.0" y="423.0" />
+  <SelectedNodes>
+    <node>be.pxl.ja.streamingservice.model.Rating</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Constructors</Category>
+    <Category>Methods</Category>
+    <Category>Inner Classes</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

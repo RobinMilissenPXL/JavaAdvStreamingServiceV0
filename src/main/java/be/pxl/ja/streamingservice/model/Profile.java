@@ -1,18 +1,25 @@
 package be.pxl.ja.streamingservice.model;
 
 import java.time.LocalDate;
+import java.time.temporal.ChronoUnit;
 
 public class Profile {
     private String name;
     private LocalDate dateOfBirth;
 
+    public Profile(String name) {
+        this.name = name;
+    }
 
     public boolean allowedToWatch(Content content){
-        return true; ///////////////////////////////////////////////////////
+        return content.getMaturityRating().getMinimumAge() <= getAge();
     }
 
     public int getAge() {
-        return 10; /////////////////////////////////////////////////////////
+        if (dateOfBirth == null){
+            return 0;
+        }
+        return (int) ChronoUnit.YEARS.between(dateOfBirth,LocalDate.now());
     }
 
     public String getName() {

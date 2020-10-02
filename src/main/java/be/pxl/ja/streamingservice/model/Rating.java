@@ -1,7 +1,7 @@
 package be.pxl.ja.streamingservice.model;
 
 public enum Rating {
-    LITTLE_KIDS(0),
+    LITTLE_KIDS(),
     OLDER_KIDS(7),
     TEENS(12),
     MATURE(16);
@@ -10,6 +10,10 @@ public enum Rating {
 
     Rating(int minimumAge){
         this.minimumAge = minimumAge;
+    }
+
+    Rating(){
+        this(0);
     }
 
     public int getMinimumAge(){
